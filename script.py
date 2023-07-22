@@ -17,7 +17,7 @@ command = [
     'omxplayer',
     '--no-osd',
     '--loop',
-    current_vid
+    '{0}/{1}'.format(script_dir, current_vid)
 ]
 
 sp = subprocess.run(command)
