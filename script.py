@@ -2,8 +2,8 @@
 # button = Button(21)
 import os
 
-# script_dir = '/home/pi/vids'
-script_dir = '/Users/sashakramer/ags-vids'
+script_dir = '/home/pi/ags-vids'
+# script_dir = '/Users/sashakramer/ags-vids'
 
 index = 0
 
