@@ -12,8 +12,14 @@ vids = os.listdir(script_dir)
 # print(os.listdir(script_dir))
 current_vid = vids[index]
 
-command = 'omxplayer --no-osd --loop {0}'.format(current_vid)
+# command = 'omxplayer --no-osd --loop {0}'.format(current_vid)
+command = [
+    'omxplayer',
+    '--no-osd',
+    '--loop',
+    current_vid
+]
 
-sp = subprocess(command)
+sp = subprocess.run(command)
 
 print("The exit code was: %d" % sp.returncode)
