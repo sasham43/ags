@@ -1,6 +1,7 @@
 # from gpiozero import Button
 # button = Button(21)
 import os
+import subprocess
 
 script_dir = '/home/pi/ags-vids'
 # script_dir = '/Users/sashakramer/ags-vids'
@@ -13,6 +14,6 @@ current_vid = vids[index]
 
 command = 'omxplayer --no-osd --loop {0}'.format(current_vid)
 
-subprocess = os.subprocess(command)
+sp = subprocess(command)
 
-print("The exit code was: %d" % subprocess.returncode)
+print("The exit code was: %d" % sp.returncode)
